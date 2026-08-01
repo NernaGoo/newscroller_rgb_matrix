@@ -13,6 +13,10 @@ The project provides a python script driving an LED RGB matrix display for scrol
 - Designed for headless Raspberry Pi operation
 - Takes headlines from news RSS feeds.
 
+### RGB Matrix Display - Newscroller
+
+![alt text](assets/news.gif)
+
 ---
 
 ## Hardware

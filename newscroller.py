@@ -47,21 +47,15 @@ if DEBUG_MODE:
 
 else:
     newsurls = {
-        "nprnews": "http://www.npr.org/rss/rss.php?id=1001",
         "googletop": "https://news.google.com/news/headlines?ned=us",
         "googleworld": "https://news.google.com/news/headlines/section/topic/WORLD?ned=us",
-        "googleus": "https://news.google.com/news/headlines/section/topic/NATION?ned=us",
         "googletech": "https://news.google.com/news/headlines/section/topic/TECHNOLOGY?ned=us",
         "googlewbiz": "https://news.google.com/news/headlines/section/topic/BUSINESS?ned=us",
         "googlescience": "https://news.google.com/news/headlines/section/topic/SCIENCE?ned=us",
         "googleent": "https://news.google.com/news/headlines/section/topic/ENTERTAINMENT?ned=us",
         "googlehealth": "https://news.google.com/news/headlines/section/topic/HEALTH?ned=us",
-        "yahoonews": "http://news.yahoo.com/rss/",
-        "sciencedailyenv": "https://www.sciencedaily.com/rss/top/environment.xml",
-        "scifi": "https://www.scifinow.co.uk/feed/",
-        "googlesyfy": "https://www.google.com/alerts/feeds/10241725619013902659/5279783658638593448",
         "marketwatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
-        "theatlantic": "https://theatlantic.com/feed/all/",
+        "wired": "https://www.wired.com/feed/rss",
     }
 
 
