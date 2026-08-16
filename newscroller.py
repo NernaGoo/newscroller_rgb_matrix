@@ -120,9 +120,11 @@ def scroll(text):
     )  # comma-separated rgb values like 255,0,255
     # choose a random Y position for scrolling text
     pos = random.choice(y_positions)
-    # Escape all quotes inside the text string so that they are processed as literal quotes rather than the start/stop of a quoted string
-    textstr = text.replace('"', '\\"')
-    cmd = f'sudo {scroller} -s {speed} --led-chain={led_chain} -f {fontpath} -l {number_of_loops} -C {color} -y {pos} {rotation} "{textstr}"'
+    # Escape special characters
+    special_chars = ['$', '"']
+    for char in special_chars:
+        text = text.replace(char, "\\" + char)
+    cmd = f'sudo {scroller} -s {speed} --led-chain={led_chain} -f {fontpath} -l {number_of_loops} -C {color} -y {pos} {rotation} "{text}"'
     dprint(cmd + "\n")  # DEBUG
     try:
         # subprocess.run(cmd, shell=True, capture_output=False, stdout=subprocess.DEVNULL)
